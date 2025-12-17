@@ -1,0 +1,87 @@
+/* mycss.css (Tambahkan di bagian bawah) */
+
+/* --- SECTION CONTACT MINIMAL (Untuk contact.html) --- */
+
+#section-contact {
+    /* Latar Belakang Biru Tua Gelap */
+    background-color: #0d1a29; 
+    padding: 100px 50px;
+    
+    /* Layout Flex Horizontal (Gambar | Info) */
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: center;
+    gap: 80px;
+    min-height: calc(100vh - 150px); /* Menyesuaikan tinggi agar mengisi viewport */
+}
+
+.profile-image-container {
+    width: 300px;
+    height: 300px;
+    /* Membuat Placeholder/Gambar default abu-abu terang */
+    background-color: #e1d4c1; 
+    border-radius: 50%; /* Membuat lingkaran sempurna */
+    overflow: hidden;
+    flex-shrink: 0; /* Mencegah gambar menyusut */
+    /* Tambahkan bayangan jika perlu */
+    box-shadow: 0 0 20px rgba(201, 144, 87, 0.4); 
+}
+
+.profile-photo {
+    /* Pastikan gambar mengisi lingkaran */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    width: 450px;
+    text-align: left;
+}
+
+.info-title {
+    color: #C99057; /* Emas */
+    font-size: 36px;
+    line-height: 1.1;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+}
+
+.info-description {
+    color: #e1d4c1; /* Krem */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.contact-details-minimal p {
+    color: #e1d4c1;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* --- Tombol "Back to home" --- */
+
+.home-button-wrapper {
+    margin-top: 30px;
+}
+
+.back-to-home-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #C99057; /* Emas (seperti pada contoh) */
+    color: #0d1a29; /* Teks Biru Tua */
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-home-btn:hover {
+    background-color: #e1d4c1; /* Hover ke Krem */
+    color: #7e102c; /* Teks Merah Anggur */
+    transform: translateY(-2px) scale(1.02);
+}
